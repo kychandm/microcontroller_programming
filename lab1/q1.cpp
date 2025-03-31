@@ -1,11 +1,13 @@
 #include <iostream>
 
+//namespace for math operations
 namespace MathOperations {
     int add(int a, int b) {
         return a + b;
     }
 }
 
+//namespace for text operations
 namespace TextOperations {
     std::string add(std::string a, std::string b) {
         return a + b;

@@ -1,5 +1,6 @@
 #include <iostream>
 
+//Macro to calculate the square of a number
 #define SQUARE(x) (x * x)
 
 int main() {

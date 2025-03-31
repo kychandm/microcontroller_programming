@@ -1,5 +1,6 @@
 #include <iostream>
 
+// Function to convert a string to uppercase
 inline std::string toUpper(std::string str) {
     for (int i = 0; i < str.length(); i++) {
         if (str[i] >= 'a' && str[i] <= 'z') {
@@ -9,6 +10,7 @@ inline std::string toUpper(std::string str) {
     return str;
 }
 
+// Function to count the number of vowels in a string
 inline int vowelsCount(std::string str) {
     int count = 0;
     for (int i = 0; i < str.length(); i++) {
@@ -19,6 +21,7 @@ inline int vowelsCount(std::string str) {
     return count;
 }
 
+// Function to reverse a string
 inline std::string reverse(std::string str) {
     std::string str2 = "";
     for (int i = str.length() - 1; i >= 0; i--) {

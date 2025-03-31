@@ -14,11 +14,12 @@ int main(){
     bool hasDigit = false;
     bool hasSpecial = false;
 
-
+    // Check for minimum length
     if (str.length() >= MIN_LENGTH) {
         hasMinLength = true;
     }
     
+    // Check for lowercase, uppercase, digit, and special characters
     for (int i = 0; i < str.length(); i++) {
         if (str[i] >= 'a' && str[i] <= 'z') {
             hasLower = true;
@@ -31,6 +32,7 @@ int main(){
         }
     }
 
+    // Check if all conditions are met
     if(hasMinLength && hasLower && hasUpper && hasDigit && hasSpecial){
         std::cout << "Strong password" << std::endl;
     } else {
