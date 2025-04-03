@@ -9,13 +9,13 @@ namespace MathOperations {
 
 //namespace for text operations
 namespace TextOperations {
-    std::string add(std::string a, std::string b) {
+    std::string concat(std::string a, std::string b) {
         return a + b;
     }
 }
 
 int main() {
     std::cout << MathOperations::add(1, 2) << std::endl;
-    std::cout << TextOperations::add("Hello", " World!") << std::endl;
+    std::cout << TextOperations::concat("Hello", " World!") << std::endl;
     return 0;
 }
